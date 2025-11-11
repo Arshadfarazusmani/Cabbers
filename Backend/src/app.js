@@ -35,6 +35,13 @@ app.use(express.static('public'));
 app.use(cookieParser());
 
 
+// Routs import 
+
+import healthcheckrout from "./routes/healthcheck.route.js "
+
+app.use("/api/v1/healthcheck",healthcheckrout)
+
+
 
 
 export {app}
